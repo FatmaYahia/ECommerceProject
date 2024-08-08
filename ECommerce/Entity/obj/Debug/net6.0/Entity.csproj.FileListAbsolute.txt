@@ -1,0 +1,11 @@
+E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Entity\bin\Debug\net6.0\Entity.deps.json
+E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Entity\bin\Debug\net6.0\Entity.dll
+E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Entity\bin\Debug\net6.0\Entity.pdb
+E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Entity\obj\Debug\net6.0\Entity.GeneratedMSBuildEditorConfig.editorconfig
+E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Entity\obj\Debug\net6.0\Entity.AssemblyInfoInputs.cache
+E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Entity\obj\Debug\net6.0\Entity.AssemblyInfo.cs
+E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Entity\obj\Debug\net6.0\Entity.csproj.CoreCompileInputs.cache
+E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Entity\obj\Debug\net6.0\Entity.dll
+E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Entity\obj\Debug\net6.0\refint\Entity.dll
+E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Entity\obj\Debug\net6.0\Entity.pdb
+E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Entity\obj\Debug\net6.0\ref\Entity.dll
