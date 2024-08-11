@@ -91,3 +91,7 @@ E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\ECommerce.AppAdmin\b
 E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\ECommerce.AppAdmin\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\ECommerce.AppAdmin\bin\Debug\net6.0\System.Text.Json.dll
 E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\ECommerce.AppAdmin\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\ECommerce.AppAdmin\bin\Debug\net6.0\Repository.dll
+E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\ECommerce.AppAdmin\bin\Debug\net6.0\Repository.pdb
+E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\ECommerce.AppAdmin\bin\Debug\net6.0\AutoMapper.dll
+E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\ECommerce.AppAdmin\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

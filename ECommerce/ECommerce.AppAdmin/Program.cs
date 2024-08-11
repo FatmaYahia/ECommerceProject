@@ -1,11 +1,19 @@
+using AutoMapper;
 using DAL;
 using Microsoft.EntityFrameworkCore;
+using Repository;
+
+using Repository.AutoMapper;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<DataContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddAutoMapper(c => c.AddProfile<AutoMapping>(), typeof(Program));
+builder.Services.AddScoped<UnitOfWork>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
