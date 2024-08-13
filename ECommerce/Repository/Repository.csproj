@@ -8,11 +8,14 @@
 
   <ItemGroup>
     <Folder Include="AppRepository\" />
-    <Folder Include="AuthRepository\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BaseRepository\BaseRepository.csproj" />
   </ItemGroup>
 
 </Project>

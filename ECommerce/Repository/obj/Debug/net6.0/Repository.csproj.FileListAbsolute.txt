@@ -10,3 +10,12 @@ E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Repository\obj\Debug
 E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Repository\obj\Debug\net6.0\Repository.pdb
 E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Repository\obj\Debug\net6.0\ref\Repository.dll
 E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Repository\obj\Debug\net6.0\Repository.csproj.AssemblyReference.cache
+E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Repository\bin\Debug\net6.0\BaseRepository.dll
+E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Repository\bin\Debug\net6.0\Common.dll
+E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Repository\bin\Debug\net6.0\DAL.dll
+E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Repository\bin\Debug\net6.0\Entity.dll
+E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Repository\bin\Debug\net6.0\BaseRepository.pdb
+E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Repository\bin\Debug\net6.0\Common.pdb
+E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Repository\bin\Debug\net6.0\DAL.pdb
+E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Repository\bin\Debug\net6.0\Entity.pdb
+E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Repository\obj\Debug\net6.0\Repository.csproj.CopyComplete
