@@ -1,6 +1,8 @@
-﻿using ECommerce.AppAdmin.Models;
+﻿using ECommerce.AppAdmin.Filter;
+using ECommerce.AppAdmin.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using static Common.DataEnum;
 
 namespace ECommerce.AppAdmin.Controllers
 {
@@ -12,7 +14,7 @@ namespace ECommerce.AppAdmin.Controllers
         {
             _logger = logger;
         }
-
+        [Authorize((int)AccessLevelEnum.ViewAccess)]
         public IActionResult Index()
         {
             return View();
