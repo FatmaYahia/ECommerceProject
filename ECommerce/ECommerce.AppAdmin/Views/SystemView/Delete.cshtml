@@ -1,0 +1,22 @@
+﻿@model SystemView
+@{
+
+    Layout = null;
+    bool canDelete =(bool)ViewBag.canDelete;
+
+}
+<h3 class="text-danger">Are u sure u want to delete this system view? </h3>
+<div>
+    @if (canDelete)
+    {
+        <form asp-action="confirmDelete">
+            <input asp-for="Id" type="hidden">
+            <button type="submit" class="btn btn-danger">Delete</button>
+            <button class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </form>
+    }
+    else
+    {
+        <h5>You can not delete this system view</h5>
+    }
+</div>

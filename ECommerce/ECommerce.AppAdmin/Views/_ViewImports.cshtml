@@ -1,4 +1,9 @@
 ﻿@using ECommerce.AppAdmin
 @using ECommerce.AppAdmin.Models
-
+@using Entity.AuthModel
+@using Entity.AppModel
+@using Repository
+@using ECommerce.AppAdmin.ViewModel
+@inject IHttpContextAccessor HttpContextAccessor
+@inject UnitOfWork UOW
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers

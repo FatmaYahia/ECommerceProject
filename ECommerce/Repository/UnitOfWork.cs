@@ -17,5 +17,7 @@ namespace Repository
             DB = db;
         }
         public SystemUserRepository SystemUserRepository=>new SystemUserRepository(DB);
+        public SystemViewRepository SystemViewRepository=>new SystemViewRepository(DB);
+        public SystemUserPermissionRepository SystemUserPermissionRepository=> new SystemUserPermissionRepository(DB);  
     }
 }

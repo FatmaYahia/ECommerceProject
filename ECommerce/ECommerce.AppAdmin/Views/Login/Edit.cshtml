@@ -1,0 +1,63 @@
+﻿@model SystemUser
+@{
+    ViewData["Title"] = "Edit System User";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+
+}
+<form asp-action="Edit">
+    <input type="hidden" asp-for="Id"/>
+    <div class="form-group mb-3">
+        <label asp-for="FullName"></label>
+        <div class="input-group">
+            <input asp-for="FullName" class="form-control form-control-lg" />
+            <span class="input-group-append">
+                <span class="input-group-text">
+                    <i class="fas fa-user"></i>
+                </span>
+            </span>
+        </div>
+        <span asp-validation-for="FullName" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="JobTitle"></label>
+        <div class="input-group">
+            <input asp-for="JobTitle" class="form-control form-control-lg" />
+            <span class="input-group-append">
+                <span class="input-group-text">
+                    <i class="fas fa-user"></i>
+                </span>
+            </span>
+        </div>
+        <span asp-validation-for="JobTitle" class="text-danger"></span>
+    </div>
+   
+    <div class="form-group mb-3">
+        <label asp-for="Email"></label>
+        <div class="input-group">
+            <input asp-for="Email" class="form-control form-control-lg" />
+            <span class="input-group-append">
+                <span class="input-group-text">
+                    <i class="fas fa-user"></i>
+                </span>
+            </span>
+        </div>
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="Password"></label>
+        <div class="input-group">
+            <input asp-for="Password" class="form-control form-control-lg" />
+            <span class="input-group-append">
+                <span class="input-group-text">
+                    <i class="fas fa-user"></i>
+                </span>
+            </span>
+        </div>
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <button type="submit" class="btn btn-primary" >Save</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,106 @@
+﻿@model SystemUserVM
+@{
+    ViewData["Title"] = "Create Or Edit System User";
+ 
+    await Html.RenderPartialAsync("PartialView/_FormStylesPartial");
+    var systemViews = UOW.SystemViewRepository.GetAll();
+
+}
+ <div class="row">
+      <div class="col">
+            <form asp-action="CreateOrEdit" class="form-horizontal">
+                <section class="card">
+                    <header class="card-header">
+                        <div class="card-actions">
+                            <a href="#" class="card-acion card-action-toggle" data-card-toggle></a>
+                            <a href="#" class="card-acion card-action-dismiss" data-card-dismiss></a>
+
+                        </div>
+                        <h2 class="card-title">@ViewData["Title"]</h2>
+                    </header>
+                    <div class="card-body">
+                        <div asp-validation-summary="ModelOnly"></div>
+                        <input asp-for="SystemUser.Id" type="hidden"/>
+                        <div class="form-group row">
+                            <label asp-for="SystemUser.FullName" class="control-label col-sm-2 pt-2"></label>
+                            <div class="col-sm-4">
+                            <input asp-for="SystemUser.FullName" class="form-control" />
+                            <span asp-validation-for="SystemUser.FullName" class="text-danger"></span>
+                            </div>
+                       
+                            <label asp-for="SystemUser.JobTitle" class="control-label col-sm-2 pt-2"></label>
+                            <div class="col-sm-4">
+                            <input asp-for="SystemUser.JobTitle" class="form-control" />
+                            <span asp-validation-for="SystemUser.JobTitle" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label asp-for="SystemUser.Email" class="control-label col-sm-2 pt-2"></label>
+                            <div class="col-sm-4">
+                                <input asp-for="SystemUser.Email" class="form-control" />
+                                <span asp-validation-for="SystemUser.Email" class="text-danger"></span>
+                            </div>
+                       
+                            <label asp-for="SystemUser.Password" class="control-label col-sm-2 pt-2"></label>
+                            <div class="col-sm-4">
+                                <input asp-for="SystemUser.Password" class="form-control" />
+                                <span asp-validation-for="SystemUser.Password" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label asp-for="fullAccessLevelList" class="control-label col-sm-2 pt-2"></label>
+                            <div class="col-sm-10">
+                                <select asp-for="fullAccessLevelList" data-plugin-selectTwo class="form-control"
+                                         asp-items="@(new MultiSelectList( systemViews,"Id","Name",Model.fullAccessLevelList))">
+                                </select>
+                                <span asp-validation-for="fullAccessLevelList" class="text-danger"></span>
+                             </div>
+                         </div>
+                        <div class="form-group row">
+                            <label asp-for="controlAccessLevellList" class="control-label col-sm-2 pt-2"></label>
+                            <div class="col-sm-10">
+                                <select asp-for="controlAccessLevellList" data-plugin-selectTwo class="form-control"
+                                  asp-items="@(new MultiSelectList(systemViews,"Id","Name",Model.controlAccessLevellList))">
+
+                                </select>
+                                <span asp-validation-for="controlAccessLevellList" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label asp-for="viewAccessLevelList" class="control-label col-sm-2 pt-2"></label>
+                            <div class="col-sm-10">
+                                <select asp-for="viewAccessLevelList" data-plugin-selectTwo class="form-control"
+                                        asp-items="@(new MultiSelectList(systemViews,"Id","Name",Model.viewAccessLevelList))">
+                                </select>
+                                <span asp-validation-for="viewAccessLevelList" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label asp-for="SystemUser.IsActive" class="control-label col-sm-2 pt-2"></label>
+                            <div class="col-sm-10">
+                                <input asp-for="SystemUser.IsActive" class="form-control"/>
+                                <span asp-validation-for="SystemUser.IsActive" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <button type="reset" class="btn btn-default">Reset</button>
+                                <button type="submit" class="btn btn-primary">Save</button>
+                                <a asp-action="Index" class="btn btn-success">Back</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </form>
+      </div>
+ </div>
+ @section Scripts{
+     @{
+        await Html.RenderPartialAsync("PartialView/_ValidationScriptPartial");
+
+        await Html.RenderPartialAsync("PartialView/_FormScriptsPartial");
+
+     }
+ }

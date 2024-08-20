@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TiJkCHw00iTJfIjBC70dXgdcxd1xM5oqS9LnYjjlkvY=",
+  "Hash": "8L4U8AbmxMi8n53sOjpLxNrelc/wAdvWIfH438B1J50=",
   "Source": "ECommerce.AppAdmin",
   "BasePath": "_content/ECommerce.AppAdmin",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\ECommerce.AppAdmin\\wwwroot\\jquery-ajax-unobtrusive\\jquery.unobtrusive-ajax.js",
+      "SourceId": "ECommerce.AppAdmin",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\ECommerce.AppAdmin\\wwwroot\\",
+      "BasePath": "_content/ECommerce.AppAdmin",
+      "RelativePath": "jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\jquery-ajax-unobtrusive\\jquery.unobtrusive-ajax.js"
+    },
+    {
+      "Identity": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\ECommerce.AppAdmin\\wwwroot\\jquery-ajax-unobtrusive\\jquery.unobtrusive-ajax.min.js",
+      "SourceId": "ECommerce.AppAdmin",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\ECommerce.AppAdmin\\wwwroot\\",
+      "BasePath": "_content/ECommerce.AppAdmin",
+      "RelativePath": "jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\jquery-ajax-unobtrusive\\jquery.unobtrusive-ajax.min.js"
     },
     {
       "Identity": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\ECommerce.AppAdmin\\wwwroot\\js\\site.js",

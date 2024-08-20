@@ -1,0 +1,117 @@
+﻿@model IEnumerable<SystemUser>
+@{
+    ViewData["Title"] = "System User";
+    string Email = HttpContextAccessor.HttpContext.Session.GetString("Email");
+    string viewName = this.ViewContext.RouteData.Values["controller"].ToString();
+    bool isFullAccess = UOW.SystemUserPermissionRepository.isFullAccess(Email, viewName);
+    bool isControlAccess = UOW.SystemUserPermissionRepository.isControlAccess(Email, viewName);
+    await Html.RenderPartialAsync("PartialView/_FormStylesPartial");
+    await Html.RenderPartialAsync("PartialView/_TableStylesPartial");
+
+}
+<div class="row">
+    <div class="col">
+       <section class="card">
+            <header class="card-header">
+                <div class="card-actions">
+                    <a href="#" class="card-acion card-action-toggle" data-card-toggle></a>
+                    <a href="#" class="card-acion card-action-dismiss" data-card-dismiss></a>
+
+                </div>
+                <h2 class="card-title">@ViewData["Title"]</h2>
+            </header>
+           <div class="card-body">
+                <table class="table table-striped table-bordered mb-0" id="SystemUserTable">
+                   <thead>
+                       <tr>
+                           <th>@Html.DisplayNameFor(model=>model.Id)</th>
+                           <th>@Html.DisplayNameFor(model=>model.FullName)</th>
+                           <th>@Html.DisplayNameFor(model=>model.JobTitle)</th>
+                           <th>@Html.DisplayNameFor(model=>model.Email)</th>
+                           <th>@Html.DisplayNameFor(model=>model.SystemUserPermissions)</th>
+                           <th>@Html.DisplayNameFor(model=>model.IsActive)</th>
+                            @if (isFullAccess)
+                            {
+                               <th>
+                                    <a asp-action="CreateOrEdit" class="btn btn-outline-primary a-btn-slide-text">
+                                        <i class="fas fa-plus-circle"></i>
+                                        <span><strong>Create New</strong></span>
+                                    </a>
+                               </th>
+                            }
+                        </tr>
+                   </thead>
+                   <tbody>
+                        @foreach(var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.FullName</td>
+                                <td>@item.JobTitle</td>
+                                <td>@item.Email</td>
+                                <td>@item.SystemUserPermissions.Count()</td>
+                                <td>@Html.DisplayFor(x=>item.IsActive)</td>
+                                <td>
+                                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-outline-success a-btn-slide-text displayBtn">
+                                        <i class="fas fa-eye"></i>
+                                        
+                                    </a>
+                                    @if (isControlAccess)
+                                    {
+                                        <a asp-action="CreateOrEdit" asp-route-id="@item.Id" class="btn btn-outline-primary a-btn-slide-text">
+                                            <i class="fas fa-edit"></i>
+                                           
+                                        </a>
+                                    }
+                                    @if(isFullAccess){
+                                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-danger a-btn-slide-text displayBtn">
+                                            <i class="fas fa-trash-alt"></i>
+                                          
+                                        </a>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+               </table>
+           </div>
+          
+       </section>
+    </div>
+</div>
+<div class="modal fade bd-example-modal-lg" id="DisplayModal" tabindex="-1" role="dialog" aria-labelledby="DetailsTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">@ViewData["Title"]</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="Display">
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("PartialView/_ValidationScriptPartial");
+
+        await Html.RenderPartialAsync("PartialView/_FormScriptsPartial");
+        await Html.RenderPartialAsync("PartialView/_TableScriptsPartial");
+    }
+    <script>
+        $(document).ready(function(){
+            $("#SystemUserTable").on("click", ".displayBtn", function () {
+                event.preventDefault();
+                var href = $(this).attr('href');
+                $("#Display").load(href);
+                $("#DisplayModal").modal("show");
+            })
+        })
+    </script>
+}
+
+
+
