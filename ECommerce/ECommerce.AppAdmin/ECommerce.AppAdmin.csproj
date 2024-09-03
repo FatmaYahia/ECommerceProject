@@ -2809,4 +2809,8 @@
     <TypeScriptCompile Include="wwwroot\Template-Assets\vendor\codemirror\node_modules\uri-js\dist\esnext\util.d.ts" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\ProductImages\" />
+  </ItemGroup>
+
 </Project>

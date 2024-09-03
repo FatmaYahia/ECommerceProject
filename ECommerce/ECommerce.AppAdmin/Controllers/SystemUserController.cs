@@ -58,8 +58,7 @@ namespace ECommerce.AppAdmin.Controllers
                     UOW.SystemUserRepository.CreateEntity(systemUserVM.SystemUser);
                     UOW.SystemUserRepository.Save();
                 }
-                if (systemUserVM.viewAccessLevelList.Any() || systemUserVM.controlAccessLevellList.Any() || systemUserVM.fullAccessLevelList.Any())
-                {
+              
                     UOW.SystemUserPermissionRepository.DeleteEntity(UOW.SystemUserPermissionRepository.GetAll().Where(x => x.Fk_systemUser == systemUserVM.SystemUser.Id).ToList());
                     UOW.SystemUserPermissionRepository.CreateEntity(new SystemUserPermission
                     {
@@ -68,7 +67,7 @@ namespace ECommerce.AppAdmin.Controllers
                         Fk_systemUser = systemUserVM.SystemUser.Id,
 
                     });
-                    if (systemUserVM.fullAccessLevelList.Any())
+                    if (systemUserVM.fullAccessLevelList !=null)
                     {
                         foreach (var item in systemUserVM.fullAccessLevelList)
                         {
@@ -80,13 +79,13 @@ namespace ECommerce.AppAdmin.Controllers
                             });
                         }
                     }
-                    if (systemUserVM.controlAccessLevellList.Any())
+                    if (systemUserVM.controlAccessLevellList != null)
                     {
-                        if (systemUserVM.fullAccessLevelList.Any())
+                        if (systemUserVM.fullAccessLevelList != null)
                         {
                             systemUserVM.controlAccessLevellList = systemUserVM.controlAccessLevellList.Where(x => !systemUserVM.fullAccessLevelList.Contains(x)).ToList();
                         }
-                        if (systemUserVM.controlAccessLevellList.Any())
+                        if (systemUserVM.controlAccessLevellList != null)
                         {
                             foreach (var item in systemUserVM.controlAccessLevellList)
                             {
@@ -99,31 +98,31 @@ namespace ECommerce.AppAdmin.Controllers
                             }
                         }
                     }
-                    if (systemUserVM.viewAccessLevelList.Any())
+                if (systemUserVM.viewAccessLevelList != null)
+                {
+                    if (systemUserVM.fullAccessLevelList != null)
                     {
-                        if (systemUserVM.fullAccessLevelList.Any())
+                        systemUserVM.viewAccessLevelList = systemUserVM.viewAccessLevelList.Where(x => !systemUserVM.fullAccessLevelList.Contains(x)).ToList();
+                    }
+                    if (systemUserVM.controlAccessLevellList != null)
+                    {
+                        systemUserVM.viewAccessLevelList = systemUserVM.viewAccessLevelList.Where(x => !systemUserVM.controlAccessLevellList.Contains(x)).ToList();
+                    }
+                    if (systemUserVM.viewAccessLevelList != null)
+                    {
+                        foreach (var item in systemUserVM.viewAccessLevelList)
                         {
-                            systemUserVM.viewAccessLevelList = systemUserVM.viewAccessLevelList.Where(x => !systemUserVM.fullAccessLevelList.Contains(x)).ToList();
-                        }
-                        if (systemUserVM.controlAccessLevellList.Any())
-                        {
-                            systemUserVM.viewAccessLevelList = systemUserVM.viewAccessLevelList.Where(x => !systemUserVM.controlAccessLevellList.Contains(x)).ToList();
-                        }
-                        if (systemUserVM.viewAccessLevelList.Any())
-                        {
-                            foreach (var item in systemUserVM.viewAccessLevelList)
+                            UOW.SystemUserPermissionRepository.CreateEntity(new SystemUserPermission
                             {
-                                UOW.SystemUserPermissionRepository.CreateEntity(new SystemUserPermission
-                                {
-                                    Fk_systemView = item,
-                                    Fk_accessLevel = (int)AccessLevelEnum.ViewAccess,
-                                    Fk_systemUser = systemUserVM.SystemUser.Id,
-                                });
-                            }
+                                Fk_systemView = item,
+                                Fk_accessLevel = (int)AccessLevelEnum.ViewAccess,
+                                Fk_systemUser = systemUserVM.SystemUser.Id,
+                            });
                         }
                     }
-                    UOW.SystemUserPermissionRepository.Save();
                 }
+                    UOW.SystemUserPermissionRepository.Save();
+                
             }
             catch (DbUpdateConcurrencyException)
             {

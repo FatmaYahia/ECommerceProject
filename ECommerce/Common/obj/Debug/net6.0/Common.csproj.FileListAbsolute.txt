@@ -9,3 +9,4 @@ E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Common\obj\Debug\net
 E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Common\obj\Debug\net6.0\refint\Common.dll
 E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Common\obj\Debug\net6.0\Common.pdb
 E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Common\obj\Debug\net6.0\ref\Common.dll
+E:\SideProjects\EcommerceProject\ECommerceProject\ECommerce\Common\obj\Debug\net6.0\Common.csproj.AssemblyReference.cache

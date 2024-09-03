@@ -1,4 +1,5 @@
 ﻿using DAL;
+using Repository.AppRepository;
 using Repository.AuthRepository;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,12 @@ namespace Repository
         }
         public SystemUserRepository SystemUserRepository=>new SystemUserRepository(DB);
         public SystemViewRepository SystemViewRepository=>new SystemViewRepository(DB);
-        public SystemUserPermissionRepository SystemUserPermissionRepository=> new SystemUserPermissionRepository(DB);  
+        public SystemUserPermissionRepository SystemUserPermissionRepository=> new SystemUserPermissionRepository(DB);
+        public ProductRepository ProductRepository => new ProductRepository(DB);
+        public OrderRepository OrderRepository => new OrderRepository(DB);
+        public UserRepository UserRepository => new UserRepository(DB);
+        public ProductRatingsRepository ProductRatingsRepository => new ProductRatingsRepository(DB);
+
+
     }
 }

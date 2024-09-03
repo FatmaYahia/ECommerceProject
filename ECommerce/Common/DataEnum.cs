@@ -8,6 +8,11 @@ namespace Common
 {
     public class DataEnum
     {
+        public static class AppMainData
+        {
+            public static string WebRootPath { get; set; }
+            public static string DomainName { get; set; }
+        }
         public enum AccessLevelEnum
         {
             FullAccess = 1,

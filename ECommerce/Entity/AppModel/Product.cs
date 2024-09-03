@@ -26,9 +26,9 @@ namespace Entity.AppModel
         [DisplayName("Summary")]
 
         public string Summary { get; set; }
-        [DisplayName("Cover")]
+        [DisplayName("Product Image")]
 
-        public string Cover { get; set; }
+        public string Cover { get; set; } = "";
         public List<ProductRating> Ratings { get; set; }
     }
 }

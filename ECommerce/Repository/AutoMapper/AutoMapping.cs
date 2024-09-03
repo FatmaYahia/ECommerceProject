@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Entity.AppModel;
 using Entity.AuthModel;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,11 @@ namespace Repository.AutoMapper
                 .ForMember(x => x.Id, opt => opt.Ignore())
                 .ForMember(x => x.CreatedAt, opt => opt.Ignore())
                 .ForMember(x => x.SystemUserPermissions, opt => opt.Ignore());
+            CreateMap<Product, Product>()
+                .ForMember(x => x.Id, opt => opt.Ignore())
+                .ForMember(x => x.CreatedAt, opt => opt.Ignore())
+                .ForMember(x => x.Ratings, opt => opt.Ignore())
+                .ForMember(x => x.Cover, opt => opt.Ignore());
         }
     }
 }

@@ -1,0 +1,15 @@
+﻿@model Product
+@{
+    Layout = null;
+}
+
+<h3 class="text-danger">Are u sure u want to delete this Product? </h3>
+<div>
+   
+    <form asp-action="confirmDelete">
+        <input asp-for="Id" type="hidden">
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <button class="btn btn-default" data-dismiss="modal">Cancel</button>
+    </form>
+  
+</div>

@@ -2,7 +2,7 @@ using AutoMapper;
 using DAL;
 using Microsoft.EntityFrameworkCore;
 using Repository;
-
+using static Common.DataEnum;
 using Repository.AutoMapper;
 
 
@@ -16,6 +16,7 @@ builder.Services.AddTransient<IHttpContextAccessor,HttpContextAccessor>();
 builder.Services.AddSession(opt=>opt.IdleTimeout=TimeSpan.FromHours(5));
 builder.Services.AddAutoMapper(c => c.AddProfile<AutoMapping>(), typeof(Program));
 builder.Services.AddScoped<UnitOfWork>();
+AppMainData.DomainName = builder.Configuration.GetValue<string>("DomainName");
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -33,6 +34,7 @@ app.UseRouting();
 
 app.UseAuthorization();
 app.UseSession();
+AppMainData.WebRootPath = app.Environment.WebRootPath;
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

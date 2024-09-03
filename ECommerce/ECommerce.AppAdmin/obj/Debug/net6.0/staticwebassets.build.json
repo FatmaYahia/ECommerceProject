@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8L4U8AbmxMi8n53sOjpLxNrelc/wAdvWIfH438B1J50=",
+  "Hash": "lKMQUzSkDG+wcySW7Qh4MzVJispj70PkPHdXrpWqyqY=",
   "Source": "ECommerce.AppAdmin",
   "BasePath": "_content/ECommerce.AppAdmin",
   "Mode": "Default",
@@ -1103,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\ECommerce.AppAdmin\\wwwroot\\ProductImages\\cleanser.jfif",
+      "SourceId": "ECommerce.AppAdmin",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\ECommerce.AppAdmin\\wwwroot\\",
+      "BasePath": "_content/ECommerce.AppAdmin",
+      "RelativePath": "ProductImages/cleanser.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductImages\\cleanser.jfif"
     },
     {
       "Identity": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\ECommerce.AppAdmin\\wwwroot\\Template-Assets\\css\\custom.css",

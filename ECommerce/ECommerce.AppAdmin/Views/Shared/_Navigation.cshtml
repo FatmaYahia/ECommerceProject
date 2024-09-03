@@ -2,6 +2,13 @@
     var Home = HttpContextAccessor.HttpContext.Session.GetString("Home");
     var SystemView = HttpContextAccessor.HttpContext.Session.GetString("SystemView");
     var SystemUser = HttpContextAccessor.HttpContext.Session.GetString("SystemUser");
+    var Product=HttpContextAccessor.HttpContext.Session.GetString("Product");
+    var ProductRatings = HttpContextAccessor.HttpContext.Session.GetString("ProductRatings");
+    var User = HttpContextAccessor.HttpContext.Session.GetString("User");
+    var Order = HttpContextAccessor.HttpContext.Session.GetString("Order");
+
+
+
    }
 <aside id="sidebar-left" class="sidebar-left">
     <div class="sidebar-header">
@@ -29,8 +36,40 @@
 
                         </a>
                         <ul class="nav nav-children">
-                           
-                          
+                            @if(Product !=null){
+                            <li>
+                                <a class="nav-link" asp-controller="Product" asp-action="Index">
+                                    <i class="fas fa-users-cog"></i>
+                                    Products
+                                </a>
+                            </li>}
+                            @if (ProductRatings != null)
+                            {
+                                <li>
+                                    <a class="nav-link" asp-controller="ProductRatings" asp-action="Index">
+                                        <i class="fas fa-users-cog"></i>
+                                        Product Ratings
+                                    </a>
+                                </li>
+                            }
+                            @if (User != null)
+                            {
+                                <li>
+                                    <a class="nav-link" asp-controller="User" asp-action="Index">
+                                        <i class="fas fa-users"></i>
+                                        Users
+                                    </a>
+                                </li>
+                            }
+                            @if (Order != null)
+                            {
+                                <li>
+                                    <a class="nav-link" asp-controller="Order" asp-action="Index">
+                                        <i class="fas fa-users-cog"></i>
+                                        Orders
+                                    </a>
+                                </li>
+                            }
                         </ul>
                     </li>
 
