@@ -19,7 +19,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BaseRepository", "BaseRepos
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseRepository", "BaseRepository\BaseRepository.csproj", "{C503CDE3-5C27-4B5F-B7B0-9263F0D9DE7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{E9DE277A-A81E-4D81-99D7-3EA9AB4EF52A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{E9DE277A-A81E-4D81-99D7-3EA9AB4EF52A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.App", "ECommerce.App\ECommerce.App.csproj", "{64510775-60EC-4D63-AEAA-46B601B887E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{E9DE277A-A81E-4D81-99D7-3EA9AB4EF52A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9DE277A-A81E-4D81-99D7-3EA9AB4EF52A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9DE277A-A81E-4D81-99D7-3EA9AB4EF52A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64510775-60EC-4D63-AEAA-46B601B887E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64510775-60EC-4D63-AEAA-46B601B887E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64510775-60EC-4D63-AEAA-46B601B887E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64510775-60EC-4D63-AEAA-46B601B887E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
