@@ -5,6 +5,30 @@
       "PackagePath": "staticwebassets\\ECommerce.App.bundle.scp.css"
     },
     {
+      "Id": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\ECommerce.App\\wwwroot\\ProductImages\\BSerum.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\BSerum.jpg"
+    },
+    {
+      "Id": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\ECommerce.App\\wwwroot\\ProductImages\\Cleanzer.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\Cleanzer.jpg"
+    },
+    {
+      "Id": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\ECommerce.App\\wwwroot\\ProductImages\\CosmeticsKit.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\CosmeticsKit.jpg"
+    },
+    {
+      "Id": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\ECommerce.App\\wwwroot\\ProductImages\\Cream.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\Cream.jpg"
+    },
+    {
+      "Id": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\ECommerce.App\\wwwroot\\ProductImages\\SimpleCleanzer.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\SimpleCleanzer.jpg"
+    },
+    {
+      "Id": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\ECommerce.App\\wwwroot\\ProductImages\\cleanser.jfif",
+      "PackagePath": "staticwebassets\\ProductImages\\cleanser.jfif"
+    },
+    {
       "Id": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\ECommerce.App\\wwwroot\\css\\animations.css",
       "PackagePath": "staticwebassets\\css\\animations.css"
     },

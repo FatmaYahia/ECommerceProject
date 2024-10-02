@@ -1,5 +1,7 @@
 ﻿using ECommerce.App.Models;
+using Entity.AppModel;
 using Microsoft.AspNetCore.Mvc;
+using Repository;
 using System.Diagnostics;
 
 namespace ECommerce.App.Controllers
@@ -7,15 +9,18 @@ namespace ECommerce.App.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly UnitOfWork UOW;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger,UnitOfWork _UOW)
         {
             _logger = logger;
+            UOW=_UOW;
         }
 
         public IActionResult Index()
         {
-            return View();
+            List<Product> products = UOW.ProductRepository.GetAll().OrderByDescending(x=>x.Offer).ToList(); 
+            return View(products);
         }
 
         public IActionResult Privacy()

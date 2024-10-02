@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<Product>
+@{
     ViewData["Title"] = "Home Page";
 }
 <section id="mainslider" class="ls mainslider">
@@ -160,27 +161,37 @@
         <div class="row">
             <div class="col-sm-12">
                 <div id="isotope_container" class="isotope masonry-layout row">
-                   @*  @foreach (var item in Model)
-                    { *@
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                    @foreach (var item in Model)
+                    {
+                        <div class="card" style="width: 16rem;cursor: pointer;" id="ProductCard" onclick="Details(@item.Id)">
+                            <img src="~/ProductImages/@item.Cover" class="card-img-top" alt="PrductImage" width="150" height="150">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h5 class="card-title">@item.Name</h5>
+                                <p class="card-text">@item.Summary</p>
+                                @if(item.Offer>0){
+                                    <span class="card-text" style="text-decoration:line-through;"><strong class="bold">@item.Price</strong>EGP</span>
+                                    <span class="card-text"><strong class="bold">
+                                               @( @item.Price - (@item.Price / 100 * @item.Offer))</strong>EGP</span>
+
+                            }else
+                                {
+                                    <span class="card-text"><strong class="bold">@item.Price</strong>EGP</span>
+
+                                }
+
                             </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
-                            </ul>
-                            <div class="card-body">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
-                            </div>
+                           
                         </div>
-                    @* } *@
+                    }
                 </div>
             </div>
         </div>
     </div>
 </section>
+@section Scripts{
+    <script>
+        function Details(id) {
+            console.log(id);
+        }
+    </script>
+}
