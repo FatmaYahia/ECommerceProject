@@ -178,7 +178,9 @@
                                     <span class="card-text"><strong class="bold">@item.Price</strong>EGP</span>
 
                                 }
-
+                                <p class="cart-text">
+                                    @item.Summary
+                                </p>
                             </div>
                            
                         </div>
@@ -192,6 +194,8 @@
     <script>
         function Details(id) {
             console.log(id);
+            window.location.href = '/Product/ProductDetails/' + id;
+
         }
     </script>
 }

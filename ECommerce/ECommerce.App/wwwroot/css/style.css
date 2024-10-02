@@ -1,10 +1,57 @@
-﻿body {
+﻿
+.custom-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    background: #16A685;
+    font-size: 20px;
+    font-family: 'Kalam',cursive;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.design {
+    padding-top: 120px;
+    overflow: hidden;
+}
+
+    .design .content {
+        float: left;
+        width: 50%
+    }
+
+        .design .content .img {
+        }
+
+        .design .content .head-section {
+            margin-top: 50px
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*body {
     margin: 0;
     padding: 0px;
     height: 1000px;
-}
+}*/
 /* start nav*/
-.nav-bar {
+/*.nav-bar {
     background-color: rgb(40, 40, 51);
     height: 80px;
     overflow: hidden;
@@ -49,11 +96,11 @@
 
             .nav-bar ul li a:hover {
                 color: #fff;
-            }
+            }*/
 /*end nav */
 
 /*start header */
-.header {
+/*.header {
     color: #fff;
     background-image: linear-gradient(115deg, rgba(46, 46, 51, 0.8), rgba(34, 34, 41, 0.7)), url(../images/head.png);
     background-repeat: no-repeat;
@@ -81,11 +128,11 @@
         color: white;
         background-color: steelblue;
         border-radius: 4px;
-    }
+    }*/
 
 /*end header */
 /*start demos */
-.demos {
+/*.demos {
     margin-top: 150px;
     text-align: center;
     font-family: 'Kalam',cursive;
@@ -116,10 +163,10 @@
             border: 1px solid rgb(80, 80, 202);
             border-radius: 3px;
             padding: 5px;
-        }
+        }*/
 /*end demos */
 /* start supported layout */
-.support {
+/*.support {
     margin-top: 150px;
     text-align: center;
     font-family: 'Kalam',cursive;
@@ -141,11 +188,11 @@
         .support .support-box img {
             width: 370px;
             height: 250px;
-        }
+        }*/
 /*end supported layout */
 
 /*start features*/
-.features {
+/*.features {
     margin-top: 60px;
     text-align: center;
     font-family: 'Kalam',cursive;
@@ -182,10 +229,10 @@
 
     .features-info p {
         color: rgb(102, 98, 98);
-    }
+    }*/
 /*end features*/
 /*start building your own website*/
-.build-website {
+/*.build-website {
     height: 300px;
     margin: 40px;
     text-align: center;
@@ -212,10 +259,10 @@
         border: 1px solid rgb(73, 73, 221);
         border-radius: 4px;
         text-transform: capitalize;
-    }
+    }*/
 /*end building your own website*/
 /* start what clients say */
-.opinion {
+/*.opinion {
     margin-top: 60px;
     text-align: center;
     font-family: 'Kalam',cursive;
@@ -255,10 +302,10 @@
 
     .opinion-info p {
         color: rgb(102, 98, 98);
-    }
+    }*/
 /* end what clients say */
 /* start get in touch */
-.intouch {
+/*.intouch {
     text-align: center;
     margin: 50px;
     padding: 10px;
@@ -316,10 +363,10 @@ form {
     background-color: rgb(88, 88, 175);
     border: 1px solid rgb(88, 88, 175);
     border-radius: 4px;
-}
+}*/
 /*end get in touch */
 /*start footer */
-.foot {
+/*.foot {
     text-align: center;
     background-color: rgb(40, 40, 51);
     overflow: hidden;
@@ -341,6 +388,6 @@ form {
             width: 25px;
             height: 25px;
             padding: 10px;
-        }
+        }*/
 
 /*end footer */

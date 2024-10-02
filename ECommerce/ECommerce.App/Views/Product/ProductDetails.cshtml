@@ -1,0 +1,41 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Product Details";
+}
+
+<section class="design">
+    <div class="container">
+        <div class="content">
+            <img src="~/ProductImages/@Model.Cover" alt="phone">
+        </div><!-- End contene -->
+        <div class="content">
+            <div class="head-section">
+                <h2>@Model.Name</h2>
+               
+                @if (Model.Offer > 0)
+                {
+                    <span class="card-text" style="text-decoration:line-through;"><strong class="bold">@Model.Price</strong>EGP</span>
+                    <span class="card-text">
+                        <strong class="bold">
+                            @(Model.Price - (Model.Price / 100 * Model.Offer))
+                        </strong>EGP
+                    </span>
+
+                }
+                else
+                {
+                    <span class="card-text"><strong class="bold">@Model.Price</strong>EGP</span>
+
+                }
+                <p>
+                   @Model.Description
+                </p><!-- End head section -->
+                <a  asp-action="AddToCart" class="btn custom-btn">Add To Cart</a>
+                <button class="custom-btn">Add To WishList</button>
+
+
+            </div><!--End container -->
+        </div>
+    </div>
+
+</section>
