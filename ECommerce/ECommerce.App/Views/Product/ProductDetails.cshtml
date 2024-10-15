@@ -30,7 +30,7 @@
                 <p>
                    @Model.Description
                 </p><!-- End head section -->
-                <a  asp-action="AddToCart" class="btn custom-btn">Add To Cart</a>
+                <a asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@Model.Id" class="btn custom-btn">Add To Cart</a>
                 <button class="custom-btn">Add To WishList</button>
 
 

@@ -1,0 +1,7 @@
+﻿@model List<CartItem>
+@{
+    Layout = null;
+}
+<div>Subtotal: @Model.Sum(x=>x.Count)</div>
+<div>Shipping: Free</div>
+<div><strong>Estimated Total: @Model.Sum(x=>x.TotalPrice)</strong></div>

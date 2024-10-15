@@ -19,9 +19,6 @@ namespace ECommerce.App.Controllers
 
             return View(UOW.ProductRepository.GetById(id));
         }
-        public IActionResult AddToCart()
-        {
-            return View();
-        }
+       
     }
 }
