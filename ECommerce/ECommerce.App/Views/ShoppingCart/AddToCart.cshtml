@@ -119,9 +119,15 @@
             </div>
             <div class="quantity-selector">
                 <input type="hidden" value="@item.Product.Id"  id="productId" />
-                <button class="SubOne">-</button>
+                @* <button class="SubOne">-</button>
                 <input type="text" id="CountItem_@item.Product.Id" value="@item.Count">
-                <button class="AddBtn">+</button>
+                <button class="AddBtn">+</button> *@
+                <select class="ddlCount_@item.Product.Id">
+                    @for (int i = 1; i <= item.Product.Amount; i++){
+                        <option>@i</option>
+                    }
+                </select>
+
             </div>
             <button>Remove</button>
         </div>
@@ -144,32 +150,16 @@
     
     $(document).ready(function () {
         console.log('cl');
-            
-              
-        $('.AddBtn').on('click', function () {
-                const productid = $('#productId').val();
 
-                var count = parseInt($('#CountItem' + '_' + productid).val());
+            const productid = $('#productId').val();
 
-           
-            console.log(productid);
-            console.log(count);
-                if (count == 1) {
-                    $('.SubOne').attr('disabled', 'disabled');
-                } else {
-                    $('.SubOne').removeAttr('disabled')
-                }
-            console.log('click');
-              //  var count = parseInt($('.CountItem').val());
-            count += 1;
-                console.log(count);
-
-              $('#CountItem' + '_' + productid).val(count);
-            // Get values from input fields
-                console.log(productid);
+        $('.ddlCount_' + productid).on('change', function () {
+            console.log('in')
+                console.log($('.ddlCount_' + productid).val())
+         
 
             $.ajax({
-                url: '/ShoppingCart/AddOne', // Replace with your API endpoint
+                url: '/ShoppingCart/AddOne', 
                 method: 'GET',
                 data: {
                         productid: productid,
@@ -187,42 +177,6 @@
                 }
             });
         });
-            $('.SubOne').on('click', function () {
-                console.log('click');
-                var count = parseInt($('.CountItem').val());
-                if (count <= 2) {
-                    $('.SubOne').attr('disabled', 'disabled');
-                } else {
-                    $('.SubOne').removeAttr('disabled')
-                }
-            
-            count -= 1;
-            console.log(count);
-
-            $('.CountItem').val(count);
-            // Get values from input fields
-            const productid = $('#productId').val();
-            console.log(productid);
-
-            $.ajax({
-                url: '/ShoppingCart/SubOne', // Replace with your API endpoint
-                method: 'GET',
-                data: {
-                    productid: productid,
-
-                },
-                success: function (response) {
-                    console.log('ok');
-
-                    $('#summary').html(response);
-                },
-                error: function (xhr, status, error) {
-                    console.log('not ok');
-
-                    $('#summary').html('Error: ' + error);
-                }
-                });
-            });
-    });
+        });
 </script>}
 

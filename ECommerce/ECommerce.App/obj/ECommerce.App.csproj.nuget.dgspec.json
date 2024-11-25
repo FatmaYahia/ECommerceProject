@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\ECommerce.App\\ECommerce.App.csproj": {}
+    "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\ECommerce.App\\ECommerce.App.csproj": {}
   },
   "projects": {
-    "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\BaseRepository\\BaseRepository.csproj": {
+    "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\BaseRepository\\BaseRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\BaseRepository\\BaseRepository.csproj",
+        "projectUniqueName": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\BaseRepository\\BaseRepository.csproj",
         "projectName": "BaseRepository",
-        "projectPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\BaseRepository\\BaseRepository.csproj",
+        "projectPath": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\BaseRepository\\BaseRepository.csproj",
         "packagesPath": "C:\\Users\\ascom\\.nuget\\packages\\",
         "outputPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\BaseRepository\\obj\\",
         "projectStyle": "PackageReference",
@@ -33,8 +33,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\DAL\\DAL.csproj": {
-                "projectPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\DAL\\DAL.csproj"
+              "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\DAL\\DAL.csproj": {
+                "projectPath": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\DAL\\DAL.csproj"
               }
             }
           }
@@ -68,12 +68,12 @@
         }
       }
     },
-    "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Common\\Common.csproj": {
+    "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Common\\Common.csproj",
+        "projectUniqueName": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Common\\Common.csproj",
+        "projectPath": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\ascom\\.nuget\\packages\\",
         "outputPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Common\\obj\\",
         "projectStyle": "PackageReference",
@@ -134,12 +134,12 @@
         }
       }
     },
-    "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\DAL\\DAL.csproj": {
+    "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\DAL\\DAL.csproj",
+        "projectUniqueName": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\DAL\\DAL.csproj",
+        "projectPath": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\ascom\\.nuget\\packages\\",
         "outputPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\DAL\\obj\\",
         "projectStyle": "PackageReference",
@@ -163,11 +163,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Common\\Common.csproj": {
-                "projectPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Common\\Common.csproj"
+              "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\Common\\Common.csproj": {
+                "projectPath": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\Common\\Common.csproj"
               },
-              "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Entity\\Entity.csproj": {
-                "projectPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Entity\\Entity.csproj"
+              "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\Entity\\Entity.csproj": {
+                "projectPath": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\Entity\\Entity.csproj"
               }
             }
           }
@@ -213,12 +213,12 @@
         }
       }
     },
-    "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\ECommerce.App\\ECommerce.App.csproj": {
+    "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\ECommerce.App\\ECommerce.App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\ECommerce.App\\ECommerce.App.csproj",
+        "projectUniqueName": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\ECommerce.App\\ECommerce.App.csproj",
         "projectName": "ECommerce.App",
-        "projectPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\ECommerce.App\\ECommerce.App.csproj",
+        "projectPath": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\ECommerce.App\\ECommerce.App.csproj",
         "packagesPath": "C:\\Users\\ascom\\.nuget\\packages\\",
         "outputPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\ECommerce.App\\obj\\",
         "projectStyle": "PackageReference",
@@ -242,11 +242,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\DAL\\DAL.csproj": {
-                "projectPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\DAL\\DAL.csproj"
+              "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\DAL\\DAL.csproj": {
+                "projectPath": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\DAL\\DAL.csproj"
               },
-              "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Repository\\Repository.csproj": {
-                "projectPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Repository\\Repository.csproj"
+              "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\Repository\\Repository.csproj": {
+                "projectPath": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\Repository\\Repository.csproj"
               }
             }
           }
@@ -273,7 +273,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[6.0.17, )"
+              "version": "[6.0.18, )"
             },
             "Microsoft.jQuery.Unobtrusive.Ajax": {
               "target": "Package",
@@ -303,12 +303,12 @@
         }
       }
     },
-    "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Entity\\Entity.csproj": {
+    "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Entity\\Entity.csproj",
+        "projectUniqueName": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Entity\\Entity.csproj",
+        "projectPath": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\Entity\\Entity.csproj",
         "packagesPath": "C:\\Users\\ascom\\.nuget\\packages\\",
         "outputPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Entity\\obj\\",
         "projectStyle": "PackageReference",
@@ -363,12 +363,12 @@
         }
       }
     },
-    "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Repository\\Repository.csproj": {
+    "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Repository\\Repository.csproj",
+        "projectUniqueName": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Repository\\Repository.csproj",
+        "projectPath": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\ascom\\.nuget\\packages\\",
         "outputPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Repository\\obj\\",
         "projectStyle": "PackageReference",
@@ -392,8 +392,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\BaseRepository\\BaseRepository.csproj": {
-                "projectPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\BaseRepository\\BaseRepository.csproj"
+              "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\BaseRepository\\BaseRepository.csproj": {
+                "projectPath": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\BaseRepository\\BaseRepository.csproj"
               }
             }
           }

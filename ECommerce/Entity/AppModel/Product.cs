@@ -17,6 +17,9 @@ namespace Entity.AppModel
         [DisplayName("Product Price")]
 
         public decimal Price { get; set; }
+        [DisplayName("Amount")]
+
+        public int Amount { get; set; }
         [DisplayName("Offer")]
 
         public int Offer { get; set; }

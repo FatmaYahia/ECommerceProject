@@ -59,15 +59,10 @@ namespace ECommerce.App.Controllers
             if (CartItems.Any(x => x.Product.Id == product.Id))
             {
                 var item = CartItems.Where(x => x.Product.Id == product.Id).FirstOrDefault();
-                if(item.Count == 1)
-                {
-                    CartItems.Remove(item);
-                }
-                else
-                {
-                    item.TotalPrice -= product.Offer == 0 ? product.Price : (product.Price - (product.Price / 100 * product.Offer));
-                    item.Count -= 1;
-                }
+               
+                item.TotalPrice -= product.Offer == 0 ? product.Price : (product.Price - (product.Price / 100 * product.Offer));
+                item.Count -= 1;
+               
                 
             }
             return View("Summary", CartItems);

@@ -71,6 +71,9 @@ namespace DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("Amount")
+                        .HasColumnType("int");
+
                     b.Property<string>("Cover")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -204,22 +207,22 @@ namespace DAL.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2024, 9, 17, 22, 19, 46, 461, DateTimeKind.Local).AddTicks(9322),
-                            LastModifiedAt = new DateTime(2024, 9, 17, 22, 19, 46, 461, DateTimeKind.Local).AddTicks(9331),
+                            CreatedAt = new DateTime(2024, 10, 16, 17, 59, 16, 711, DateTimeKind.Local).AddTicks(7933),
+                            LastModifiedAt = new DateTime(2024, 10, 16, 17, 59, 16, 711, DateTimeKind.Local).AddTicks(7943),
                             Name = "FullAccess"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2024, 9, 17, 22, 19, 46, 461, DateTimeKind.Local).AddTicks(9334),
-                            LastModifiedAt = new DateTime(2024, 9, 17, 22, 19, 46, 461, DateTimeKind.Local).AddTicks(9335),
+                            CreatedAt = new DateTime(2024, 10, 16, 17, 59, 16, 711, DateTimeKind.Local).AddTicks(7947),
+                            LastModifiedAt = new DateTime(2024, 10, 16, 17, 59, 16, 711, DateTimeKind.Local).AddTicks(7947),
                             Name = "ControlAccess"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2024, 9, 17, 22, 19, 46, 461, DateTimeKind.Local).AddTicks(9336),
-                            LastModifiedAt = new DateTime(2024, 9, 17, 22, 19, 46, 461, DateTimeKind.Local).AddTicks(9337),
+                            CreatedAt = new DateTime(2024, 10, 16, 17, 59, 16, 711, DateTimeKind.Local).AddTicks(7948),
+                            LastModifiedAt = new DateTime(2024, 10, 16, 17, 59, 16, 711, DateTimeKind.Local).AddTicks(7949),
                             Name = "ViewAccess"
                         });
                 });
@@ -265,13 +268,13 @@ namespace DAL.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2024, 9, 17, 22, 19, 46, 461, DateTimeKind.Local).AddTicks(9554),
+                            CreatedAt = new DateTime(2024, 10, 16, 17, 59, 16, 711, DateTimeKind.Local).AddTicks(8203),
                             Email = "Admin@App.com",
                             FullName = "Admin",
                             IsActive = true,
                             JobTitle = "Admin",
-                            LastModifiedAt = new DateTime(2024, 9, 17, 22, 19, 46, 461, DateTimeKind.Local).AddTicks(9555),
-                            Password = "hmji7617of"
+                            LastModifiedAt = new DateTime(2024, 10, 16, 17, 59, 16, 711, DateTimeKind.Local).AddTicks(8204),
+                            Password = "ucou3404rb"
                         });
                 });
 
@@ -312,29 +315,29 @@ namespace DAL.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2024, 9, 17, 22, 19, 46, 461, DateTimeKind.Local).AddTicks(9724),
+                            CreatedAt = new DateTime(2024, 10, 16, 17, 59, 16, 711, DateTimeKind.Local).AddTicks(8368),
                             Fk_accessLevel = 1,
                             Fk_systemUser = 1,
                             Fk_systemView = 1,
-                            LastModifiedAt = new DateTime(2024, 9, 17, 22, 19, 46, 461, DateTimeKind.Local).AddTicks(9726)
+                            LastModifiedAt = new DateTime(2024, 10, 16, 17, 59, 16, 711, DateTimeKind.Local).AddTicks(8369)
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2024, 9, 17, 22, 19, 46, 461, DateTimeKind.Local).AddTicks(9729),
+                            CreatedAt = new DateTime(2024, 10, 16, 17, 59, 16, 711, DateTimeKind.Local).AddTicks(8372),
                             Fk_accessLevel = 1,
                             Fk_systemUser = 1,
                             Fk_systemView = 2,
-                            LastModifiedAt = new DateTime(2024, 9, 17, 22, 19, 46, 461, DateTimeKind.Local).AddTicks(9730)
+                            LastModifiedAt = new DateTime(2024, 10, 16, 17, 59, 16, 711, DateTimeKind.Local).AddTicks(8373)
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2024, 9, 17, 22, 19, 46, 461, DateTimeKind.Local).AddTicks(9731),
+                            CreatedAt = new DateTime(2024, 10, 16, 17, 59, 16, 711, DateTimeKind.Local).AddTicks(8374),
                             Fk_accessLevel = 1,
                             Fk_systemUser = 1,
                             Fk_systemView = 3,
-                            LastModifiedAt = new DateTime(2024, 9, 17, 22, 19, 46, 461, DateTimeKind.Local).AddTicks(9731)
+                            LastModifiedAt = new DateTime(2024, 10, 16, 17, 59, 16, 711, DateTimeKind.Local).AddTicks(8374)
                         });
                 });
 
@@ -364,22 +367,22 @@ namespace DAL.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2024, 9, 17, 22, 19, 46, 461, DateTimeKind.Local).AddTicks(9524),
-                            LastModifiedAt = new DateTime(2024, 9, 17, 22, 19, 46, 461, DateTimeKind.Local).AddTicks(9525),
+                            CreatedAt = new DateTime(2024, 10, 16, 17, 59, 16, 711, DateTimeKind.Local).AddTicks(8170),
+                            LastModifiedAt = new DateTime(2024, 10, 16, 17, 59, 16, 711, DateTimeKind.Local).AddTicks(8171),
                             Name = "Home"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2024, 9, 17, 22, 19, 46, 461, DateTimeKind.Local).AddTicks(9530),
-                            LastModifiedAt = new DateTime(2024, 9, 17, 22, 19, 46, 461, DateTimeKind.Local).AddTicks(9531),
+                            CreatedAt = new DateTime(2024, 10, 16, 17, 59, 16, 711, DateTimeKind.Local).AddTicks(8174),
+                            LastModifiedAt = new DateTime(2024, 10, 16, 17, 59, 16, 711, DateTimeKind.Local).AddTicks(8174),
                             Name = "SystemView"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2024, 9, 17, 22, 19, 46, 461, DateTimeKind.Local).AddTicks(9532),
-                            LastModifiedAt = new DateTime(2024, 9, 17, 22, 19, 46, 461, DateTimeKind.Local).AddTicks(9532),
+                            CreatedAt = new DateTime(2024, 10, 16, 17, 59, 16, 711, DateTimeKind.Local).AddTicks(8176),
+                            LastModifiedAt = new DateTime(2024, 10, 16, 17, 59, 16, 711, DateTimeKind.Local).AddTicks(8176),
                             Name = "SystemUser"
                         });
                 });
