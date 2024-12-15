@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Entity.AppModel;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerce.App.Controllers
 {
@@ -9,6 +10,11 @@ namespace ECommerce.App.Controllers
             return View();
         }
         public IActionResult Register()
+        {
+            User user = new User();
+            return View(user);
+        }
+        public IActionResult Login()
         {
             return View();
         }

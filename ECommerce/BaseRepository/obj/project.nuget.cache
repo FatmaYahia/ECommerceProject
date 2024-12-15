@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RehEQaIOK6UNKepcHfM2b3YwU2P/I/c4AYTpT6gizKfjXocmxwsbVO3KL+7ik3eCqsCml0tWzvYpTh6m3eu0ig==",
+  "dgSpecHash": "b/ZRyhCs6tdvJTAyH8gY9XIMO5OtRZv2UM+HLU5Lbk4CVYMK8t5abX8LtnI7ahe6Z6X8oKynDyzqkzNVLT4u4w==",
   "success": true,
-  "projectFilePath": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\BaseRepository\\BaseRepository.csproj",
+  "projectFilePath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\BaseRepository\\BaseRepository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ascom\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\ascom\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

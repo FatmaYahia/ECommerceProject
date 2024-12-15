@@ -1,0 +1,88 @@
+﻿@{
+    Layout = null;
+}
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-group {
+            margin: 15px 280px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin-top: 10px; /* Added margin for spacing */
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #0056b3;
+            }
+
+        a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+
+<body>
+
+    <div class="container">
+        <img src="~/images/logo.jpg" width="200" height="200" alt="Placeholder Image">
+        <p>Hala! Let's get some new stuff</p>
+
+        <div>
+            <a class="btn btn-primary" >LogIn</a>
+            <a class="btn btn-primary" id="contentbtn">Register</a>
+        </div>
+
+        <div class="input-group" id="content">
+            <input type="text" placeholder="Enter your Email Please or Phone Number">
+        </div>
+        <div>
+            <button type="button">Continue</button> 
+
+        </div>
+    </div>
+
+</body>
+
+        <script>
+             $(document).ready(function () {
+            $("#contentbtn").click(function () {
+                console.log("inside button")
+                $("#content").html(<input type="text" placeholder="Enter your Email Please">);
+                 });
+             });
+    </script>
+

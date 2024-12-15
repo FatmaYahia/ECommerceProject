@@ -21,61 +21,13 @@
     <script src="~/~/js/vendor/modernizr-2.6.2.min.js"></script>
    </head>
     <body>
-        <div class="preloader">
-            <div class="preloader_image"></div>
-        </div>
-        <div id="canvas">
-            <div id="box_wrapper">
-                <section class="page_topline gradient section_padding_0 table_section table_section_md">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-6 text-center text-md-left">
-                            </div>
-                        @if (string.IsNullOrEmpty(Email))
-                        {
-                            <div class="col-md-6 text-center text-md-right">
-                                <ul class="inline-dropdown">
-                                    <li class="dropdown login-dropdown">
-                                        <a id="login" asp-action="login" asp-controller="Home" style="padding: 0px;font-size: 14px">Login</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6 text-center text-md-right">
-                                <ul class="inline-dropdown">
-                                    <li class="dropdown login-dropdown">
-                                        <a id="login" asp-action="Register" asp-controller="User" style="font-size:14px">Register</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        }
-                        else
-                        {
-                            <div class="col-md-6 text-center text-md-right">
-                                <ul class="inline-dropdown">
-                                    <li class="dropdown login-dropdown">
-                                       
-                                        <a id="login" asp-action="Profile" asp-controller="User" asp-route-Id="@Id" style="font-size:14px">
-                                            My Profile
-                                        </a>
-                                       
-                                    </li>
-                                    <li class="dropdown login-dropdown">
-                                        <a id="login" asp-action="Logout" asp-controller="Home" style="font-size:14px">Logout</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        }
-
-                    </div>
-                    </div>
-                </section>
-            </div>
-        </div>
+        
+        
     <section class="page_toplogo ls text-center ">
 
-            <a asp-action="Index" asp-controller="Home" class="logo top_logo">
-                <img src="~/images/logo.jpg" alt="" width="100" height="100"> Cosmetics
-            </a>
+        <a asp-action="Index" asp-controller="Home" class="logo top_logo">
+            <img src="~/images/logo.jpg" alt="" width="100" height="100"> Cosmetics
+        </a>
        
         <!-- header toggler -->
         <span class="toggle_menu">
@@ -101,7 +53,11 @@
                                 <a asp-action="Index" asp-controller="WishList">WishList</a>
 
                            </li>
-                           
+                            <li>
+                                <a asp-action="Login" asp-controller="User" class="Displaybtn">LogIn</a>
+
+                            </li>
+                          
                         </ul>
                     </nav>
                     <!-- eof main nav -->
@@ -131,11 +87,40 @@
             </div>
         </div>
     </section>
-        <script src="~/lib/jquery/dist/jquery.js"></script>
+    <div class="modal fade bd-example-modal-lg" id="DisplayModal" tabindex="-1" role="dialog" aria-labelledby="DetailsTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">@ViewData["Title"]</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="Display">
+                </div>
+            </div>
+        </div>
+    </div>
+       <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+      <script src="~/lib/jquery/dist/jquery.js"></script>
       <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
-    <script src="~/js/compressed.js"></script>
-    <script src="~/js/main.js"></script>
-    @RenderSection("Scripts",required:false)
+      <script src="~/js/compressed.js"></script>
+     <script src="~/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            console.log("klxckfnsd")
+            $(".Displaybtn").click(function () {
+                console.log('hi iam here!')
+                event.preventDefault();
+                var href = $(this).attr('href');
+                console.log(href);
+                $("#Display").load(href);
+                $("#DisplayModal").modal("show");
 
+            })
+        })
+    </script>
+    @RenderSection("Scripts",required:false)
+    
     </body>
 </html>

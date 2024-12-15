@@ -11078,9 +11078,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\ECommerce.AppAdmin\\ECommerce.AppAdmin.csproj",
+      "projectUniqueName": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\ECommerce.AppAdmin\\ECommerce.AppAdmin.csproj",
       "projectName": "ECommerce.AppAdmin",
-      "projectPath": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\ECommerce.AppAdmin\\ECommerce.AppAdmin.csproj",
+      "projectPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\ECommerce.AppAdmin\\ECommerce.AppAdmin.csproj",
       "packagesPath": "C:\\Users\\ascom\\.nuget\\packages\\",
       "outputPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\ECommerce.AppAdmin\\obj\\",
       "projectStyle": "PackageReference",
@@ -11104,11 +11104,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\DAL\\DAL.csproj": {
-              "projectPath": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\DAL\\DAL.csproj"
+            "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\DAL\\DAL.csproj": {
+              "projectPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\DAL\\DAL.csproj"
             },
-            "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\Repository\\Repository.csproj": {
-              "projectPath": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\Repository\\Repository.csproj"
+            "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Repository\\Repository.csproj": {
+              "projectPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Repository\\Repository.csproj"
             }
           }
         }

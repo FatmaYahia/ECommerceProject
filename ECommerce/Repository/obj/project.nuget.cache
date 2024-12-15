@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IKmPRqxwxoTRMQkYMId3lisdBHnaBk3Y8CMSPvDSOBEZ0nPYLlBfUNTEAGuH0ViX+4ltN66XEUPcPdYT3YVyiQ==",
+  "dgSpecHash": "QtAjyYJHJ+mMWBs1TKWlLuVL5pg5RsgvLFVFZbaa7iQsbycxB/x6kaAfuu4UIdkP17TX0Imnis9f8eGwNGzOEA==",
   "success": true,
-  "projectFilePath": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\Repository\\Repository.csproj",
+  "projectFilePath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Repository\\Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ascom\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\ascom\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
