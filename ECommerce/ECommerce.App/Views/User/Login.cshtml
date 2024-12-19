@@ -61,11 +61,7 @@
         <img src="~/images/logo.jpg" width="200" height="200" alt="Placeholder Image">
         <p>Hala! Let's get some new stuff</p>
 
-        <div>
-            <a class="btn btn-primary" >LogIn</a>
-            <a class="btn btn-primary" id="contentbtn">Register</a>
-        </div>
-
+      
         <div class="input-group" id="content">
             <input type="text" placeholder="Enter your Email Please or Phone Number">
         </div>
@@ -73,16 +69,29 @@
             <button type="button">Continue</button> 
 
         </div>
+        <div>
+            <span>Don't have an account? <a asp-action="Register" class="rgstr">Register</a></span>
+
+        </div>
+
     </div>
+
 
 </body>
 
-        <script>
-             $(document).ready(function () {
-            $("#contentbtn").click(function () {
-                console.log("inside button")
-                $("#content").html(<input type="text" placeholder="Enter your Email Please">);
-                 });
-             });
+<script type="text/javascript">
+        $(".rgstr").click(function () {
+        $("#DisplayModal").modal("hide");
+
+            console.log('hi frommmmm here!')
+            event.preventDefault();
+            var href = $(this).attr('href');
+            console.log(href);
+        $("#ShowModal").load(href);
+
+        $("#RegisterModal").modal("show");
+
+        })
     </script>
 
+     
