@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Entity\\Entity.csproj": {}
+    "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\Entity\\Entity.csproj": {}
   },
   "projects": {
-    "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Entity\\Entity.csproj": {
+    "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Entity\\Entity.csproj",
+        "projectUniqueName": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Entity\\Entity.csproj",
+        "projectPath": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\Entity\\Entity.csproj",
         "packagesPath": "C:\\Users\\ascom\\.nuget\\packages\\",
         "outputPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Entity\\obj\\",
         "projectStyle": "PackageReference",

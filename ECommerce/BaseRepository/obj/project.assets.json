@@ -2754,11 +2754,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\BaseRepository\\BaseRepository.csproj",
+      "projectUniqueName": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\BaseRepository\\BaseRepository.csproj",
       "projectName": "BaseRepository",
-      "projectPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\BaseRepository\\BaseRepository.csproj",
+      "projectPath": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\BaseRepository\\BaseRepository.csproj",
       "packagesPath": "C:\\Users\\ascom\\.nuget\\packages\\",
-      "outputPath": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\BaseRepository\\obj\\",
+      "outputPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\BaseRepository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2780,8 +2780,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\DAL\\DAL.csproj": {
-              "projectPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\DAL\\DAL.csproj"
+            "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\DAL\\DAL.csproj": {
+              "projectPath": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\DAL\\DAL.csproj"
             }
           }
         }

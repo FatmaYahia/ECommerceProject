@@ -3007,11 +3007,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\DAL\\DAL.csproj",
+      "projectUniqueName": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\DAL\\DAL.csproj",
+      "projectPath": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\ascom\\.nuget\\packages\\",
-      "outputPath": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\DAL\\obj\\",
+      "outputPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3033,11 +3033,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Common\\Common.csproj": {
-              "projectPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Common\\Common.csproj"
+            "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\Common\\Common.csproj": {
+              "projectPath": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\Common\\Common.csproj"
             },
-            "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Entity\\Entity.csproj": {
-              "projectPath": "E:\\SideProjects\\EcommerceProject\\ECommerceProject\\ECommerce\\Entity\\Entity.csproj"
+            "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\Entity\\Entity.csproj": {
+              "projectPath": "E:\\SideProjects\\ECommerceProject\\ECommerceProject\\ECommerce\\Entity\\Entity.csproj"
             }
           }
         }
